@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    left: 0px;
+    /* overflow: hidden; */
+}
+@keyframes console {
+
+}
+.title {
+    animation-name: console;
+}
+.bg-black {
+    background-color: white;
+}
+.bg-white {
+    background: rgb(224, 224, 224);
+}
+.z-1 {
+    z-index: -1;
+}
+.z-2 {
+    z-index: -2;
+}
+.height-nav {
+    height: 100vh;
+}
+.height-welcome {
+    height: 100vh;
+}
+.height-about {
+    height: 480px;
+}
+.height-projects {
+    height: 1000px;
+}
+.height-contact {
+    height: 500px;
+}
+.width-nav {
+    width: 180px;
+}
+.width-full {
+    width: calc(100% - 180px);
+}
+.anchor-welcome {
+    left: 180px;
+}
+.anchor-about {
+    top: 100vh;
+    left: 180px;
+}
+.anchor-projects {
+    top: calc(100vh + 480px);
+    left: 180px;
+}
+.anchor-contact {
+    top: calc(100vh + 480px + 1000px);
+    left: 180px;
+}
+.ypad-nav {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.xpad-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ypad-about {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.ypad-projects {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.xpad-projects {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.pad-welcome {
+    padding: 0;
+}
+.position-nav {
+    top: 0;
+    left: 0;
+}
+.position-welcome {
+    top: 0;
+    left: 0;
+}
+.fixed {
+    position: fixed;
+}
+.absolute {
+    position: absolute;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.orient-center {
+    align-items: center;
+}
+.orient-left {
+    align-items: baseline;
+}
+.font-corner {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.font-nav {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+}
+.font-welcome {
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.font-about-1 {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.font-about-2 {
+    font-size: 15px;
+    color: black;
+}
+a.normal {
+    transition: color .2s ease-in-out;
+}
+.normal:link, .normal:visited {
+    text-decoration: none;
+    color: black;
+}
+.normal:hover, .normal:active {
+    text-decoration: none;
+    color: gray;
+}
+a.nav-links {
+    margin-top: 23px;
+    font-size: 20px;
+}
+a.github {
+    transition: color .2s ease-in-out;
+}
+.github:link, .github:visited {
+    color: black;
+}
+.github:hover, .github:active {
+    color: grey;
+}
+a.linkedin {
+    transition: color .2s ease-in-out;
+}
+.linkedin:link, .linkedin:visited {
+    color: black;
+}
+.linkedin:hover, .linkedin:active {
+    color: #0072b1 ;
+}
+a.resume {
+    transition: color .2s ease-in-out;
+}
+.resume:link, .resume:visited {
+    color: black;
+}
+.resume:hover, .resume:active {
+    color: grey;
+}
+.project-link:link, .project-link:visited {
+    text-decoration: none;
+    color: black;
+}
+.project-link:hover, .project-link:active {
+    text-decoration: none;
+    color: black;
+}
+img.circular {
+    border-radius: 50%;
+}
+.img-welcome {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 25px;
+}
+.img-icon {
+    width: 22px;
+    height: 22px;
+    background-size: 22px 22px;
+}
+.icon-space {
+    margin-right: 20px;
+}
+.img-about {
+    width: 280px;
+    height: 370px;
+    margin-right: 45px;
+}
+.project {
+    background-color: rgb(224, 224, 224);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 60vw;
+    height: 40vh;
+}
+.project-space {
+    margin-bottom: 45px;
+}
+.projects-title-spacing {
+    margin-bottom: 10px;
+}
+.projects-text {
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+.project-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.project-desc {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.project-icon {
+    width: 34px;
+    height: 34px;
+}
+.java-icon {
+    width: 40px;
+    height: 41px;
+}
+.html-icon {
+    width: 34px;
+    height: 34px;
+}
+.css-icon {
+    width: 34px;
+    height: 34px;
+}
+.pandas-icon {
+    width: 30px;
+    height: 45px;
+}
+.p-i-spacing {
+    margin-right: 50px;
+}
+.vertical-line {
+    border-left: 3px solid black;
+    height: 2080vh;
+    position: absolute;
+    left: 180px;
+    margin-left: -3px;
+    top: 0;
+  }
