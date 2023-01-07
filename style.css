@@ -258,8 +258,8 @@ img.circular {
     border-radius: 10px;
     border-width: 2px;
     padding: 5px;
-    margin-left: 65vw;
-    margin-bottom: 110vh;
+    margin-left: 830px;
+    margin-bottom: 700px;
 }
 .java-icon {
     width: 40px;
@@ -282,7 +282,7 @@ img.circular {
 }
 .vertical-line {
     border-left: 3px solid black;
-    height: 2100px;
+    height: calc(100vh + 1480px);
     position: absolute;
     left: 180px;
     margin-left: -3px;
