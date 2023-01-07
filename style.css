@@ -223,8 +223,10 @@ img.circular {
     border-width: 2px;
     border-radius: 20px;
     padding: 20px;
-    width: 60vw;
-    height: 40vh;
+    width: 765px;
+    height: 250px;
+    /* width: 60vw; */
+    /* height: 40vh; */
 }
 .project-space {
     margin-bottom: 45px;
