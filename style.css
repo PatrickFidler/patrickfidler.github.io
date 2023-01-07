@@ -10,13 +10,8 @@ html {
 body {
     margin: 0px;
     left: 0px;
-    /* overflow: hidden; */
-}
-@keyframes console {
-
-}
-.title {
-    animation-name: console;
+    max-height: 100px;
+    overflow-x: hidden;
 }
 .bg-black {
     background-color: white;
@@ -205,8 +200,8 @@ img.circular {
     border-radius: 50%;
 }
 .img-welcome {
-    width: 220px;
-    height: 220px;
+    width: 260px;
+    height: 260px;
     margin-bottom: 25px;
 }
 .img-icon {
@@ -218,7 +213,7 @@ img.circular {
     margin-right: 20px;
 }
 .img-about {
-    width: 280px;
+    width: 310px;
     height: 370px;
     margin-right: 45px;
 }
@@ -254,6 +249,16 @@ img.circular {
     width: 34px;
     height: 34px;
 }
+.ows-link {
+    position: absolute;
+    background-color: rgb(224, 224, 224);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 5px;
+    margin-left: 65vw;
+    margin-bottom: 110vh;
+}
 .java-icon {
     width: 40px;
     height: 41px;
@@ -275,7 +280,7 @@ img.circular {
 }
 .vertical-line {
     border-left: 3px solid black;
-    height: 2080vh;
+    height: 2100px;
     position: absolute;
     left: 180px;
     margin-left: -3px;
