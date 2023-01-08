@@ -28,6 +28,10 @@ body {
 .height-nav {
     height: 100vh;
 }
+.bnav-gap {
+    margin-top: 58vh;
+    padding-left: 14px;
+}
 .height-welcome {
     height: 100vh;
 }
@@ -39,6 +43,9 @@ body {
 }
 .height-contact {
     height: 500px;
+}
+.height-bottom {
+    height: 200px;
 }
 .width-nav {
     width: 180px;
@@ -59,6 +66,10 @@ body {
 }
 .anchor-contact {
     top: calc(100vh + 480px + 1000px);
+    left: 180px;
+}
+.anchor-bottom {
+    top: calc(100vh + 1480px);
     left: 180px;
 }
 .ypad-nav {
@@ -157,42 +168,39 @@ a.normal {
     text-decoration: none;
     color: gray;
 }
+a.text-link {
+    transition: color .2s ease-in-out;
+}
+.text-link:link, .text-link:visited {
+    text-decoration: underline;
+    color: black;
+}
+.text-link:hover, .text-link:active {
+    text-decoration: underline;
+    color: gray;
+}
 a.nav-links {
     margin-top: 23px;
     font-size: 20px;
-}
-a.github {
-    transition: color .2s ease-in-out;
-}
-.github:link, .github:visited {
-    color: black;
-}
-.github:hover, .github:active {
-    color: grey;
-}
-a.linkedin {
-    transition: color .2s ease-in-out;
-}
-.linkedin:link, .linkedin:visited {
-    color: black;
-}
-.linkedin:hover, .linkedin:active {
-    color: #0072b1 ;
-}
-a.resume {
-    transition: color .2s ease-in-out;
-}
-.resume:link, .resume:visited {
-    color: black;
-}
-.resume:hover, .resume:active {
-    color: grey;
 }
 .project-link:link, .project-link:visited {
     text-decoration: none;
     color: black;
 }
 .project-link:hover, .project-link:active {
+    text-decoration: none;
+    color: black;
+}
+a.ows-link {
+    transition: background-color .2s ease-in-out;
+}
+.ows-link:link, .ows-link:visited {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+.ows-link:hover, .ows-link:active {
+    background-color: darkgrey;
     text-decoration: none;
     color: black;
 }
@@ -251,15 +259,15 @@ img.circular {
     width: 34px;
     height: 34px;
 }
-.ows-link {
+.ows {
     position: absolute;
     background-color: rgb(224, 224, 224);
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 15px;
     border-width: 2px;
     padding: 5px;
-    margin-left: 830px;
-    margin-bottom: 700px;
+    margin-left: 635px;
+    margin-bottom: 745px;
 }
 .java-icon {
     width: 40px;
