@@ -29,7 +29,8 @@ body {
     height: 100vh;
 }
 .bnav-gap {
-    padding-top: calc(100vh - 260px);
+    /* Top Padding: 20px - Name: ~57px - Each Link: ~45px - Offset: 45px*/
+    padding-top: calc(100vh - 257px);
     padding-left: 14px;
 }
 .height-welcome {
