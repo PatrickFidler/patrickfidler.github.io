@@ -1,2 +1,3 @@
 # personal-website
-My personal website and portfolio.
+Welcome to my personal website and portfolio!
+Take a look: https://patrickfidler.github.io
