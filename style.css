@@ -286,6 +286,10 @@ img.circular {
     width: 30px;
     height: 45px;
 }
+.c-icon {
+    width: 35px;
+    height: 40px;
+}
 .p-i-spacing {
     margin-right: 50px;
 }
