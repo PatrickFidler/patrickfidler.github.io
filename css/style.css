@@ -1,0 +1,190 @@
+/* element styling */
+
+body {
+    margin-bottom: 50px;
+}
+
+p, a {
+    font-family: "Jost", sans-serif;
+    color: #212529;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Merriweather", sans-serif;
+    color: #212529;
+}
+
+p, .text-link {
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* generic classes */
+
+.icon {
+    font-size: 23px; 
+    color: #212529;
+    padding: 10px;
+    filter: none;
+    transition: filter 0.3s ease-in-out;
+}
+.icon:hover {
+    filter: drop-shadow(0px 0px 3px rgb(95, 95, 95));
+    cursor: pointer;
+}
+
+.link-arrow {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 16px;
+    margin-left: 3px;
+    transition: transform 0.2s ease;
+}
+
+.text-link, .project-link {
+    color: #212529;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    text-shadow: none;
+    transition: text-shadow 0.3s ease-in-out;
+}
+.text-link:hover, .project-link:hover {
+    text-shadow: 0px 0px 5px rgb(95, 95, 95);
+    cursor: pointer;
+}
+
+.project-link {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.text-link:hover .link-arrow, .project-link:hover .link-arrow {
+    transform: translate(2px, -2px);
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+/* navbar section styling */
+
+.navbar {
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-right: 10px;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+/* intro section styling */
+
+#intro {
+    height: 100vh;
+}
+
+#name-c {
+    padding: 30px;
+}
+
+/* about section styling */
+
+#about {
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+}
+
+/* project section styling */
+
+#projects {
+    padding-top: 8vh;
+}
+
+.project-title {
+    color: #212529;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.attribute {
+    background-color: rgb(236, 236, 236);
+    padding: 5px 19px 5px 19px;
+    border-radius: 16px;
+    margin-right: 10px;
+}
+div.attribute > p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* image formatting */
+
+#intro-images {
+    border-radius: 50%;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+#intro-images:hover {
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    cursor: pointer;
+}
+#intro-img-a {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 1;
+}
+#intro-img-b {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 0;
+}
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
+#intro-img-a.spin {
+    animation: spin 1s;
+}
+#intro-img-b.spin {
+    animation: spin 1s;
+}
+
+#about-img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+#about-img:hover {
+    box-shadow: 0px 0px 10px rgb(95, 95, 95);
+    cursor: pointer;
+}
+@keyframes jiggle {
+    20%   {transform: rotate(-5deg);}
+    50%  {transform: rotate(5deg);}
+    90% {transform: rotate(0deg);}
+}
+#about-img.jiggle {
+    animation: jiggle 2s;
+}
