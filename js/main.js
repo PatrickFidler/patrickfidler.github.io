@@ -1,25 +1,29 @@
 // draw name paths
-let offset = 0;
-d3.selectAll("path").each(function(d) {
-    let path = d3.select(this);
-    path.attr("stroke-dashoffset", this.getTotalLength());
-    path.attr("stroke-dasharray", this.getTotalLength());
-    path.transition()
-        .duration(3000)
-        .delay(offset)
-        .attr("stroke-dashoffset", 0);
-    offset = offset + 200;
-});
+function drawName() {
+    let offset = 0;
+    d3.selectAll("path").each(function(d) {
+        let path = d3.select(this);
+        path.attr("stroke-dashoffset", this.getTotalLength());
+        path.attr("stroke-dasharray", this.getTotalLength());
+        path.transition()
+            .duration(3000)
+            .delay(offset)
+            .attr("stroke-dashoffset", 0);
+        offset = offset + 200;
+    });
+}
 
 // fill name paths
-let root = getComputedStyle(document.documentElement);
-let curr_color = root.getPropertyValue('--lm-color');
-d3.select("#svgGroup")
-    .style("stroke", curr_color)
-    .transition()
-    .duration(2500)
-    .delay(4000)
-    .style("fill", curr_color);
+function fillName() {
+    let root = getComputedStyle(document.documentElement);
+    let curr_color = root.getPropertyValue('--lm-color');
+    d3.select("#svgGroup")
+        .style("stroke", curr_color)
+        .transition()
+        .duration(2500)
+        .delay(4000)
+        .style("fill", curr_color);
+}
 
 // switch between greyscale/colour intro image
 const intro_box = document.getElementById("intro-images");
@@ -48,11 +52,13 @@ intro_box.addEventListener("click", () => {
         .style("opacity", b_opa);
 });
 
-
 // about me image listener
-const img = document.getElementById("about-img");
-img.addEventListener("click", () => {
-    img.classList.remove("jiggle");
-    void img.offsetWidth;
-    img.classList.add("jiggle");
-});
+// const img = document.getElementById("about-img");
+// img.addEventListener("click", () => {
+//     img.classList.remove("jiggle");
+//     void img.offsetWidth;
+//     img.classList.add("jiggle");
+// });
+
+drawName();
+// fillName();

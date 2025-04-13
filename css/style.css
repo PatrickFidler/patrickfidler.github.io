@@ -23,6 +23,7 @@ p, .text-link {
 }
 
 h1 {
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -33,15 +34,24 @@ h2 {
 
 /* generic classes */
 
+.container {
+    width: 60%;
+    padding-top: 4%;
+    margin: 0 auto;
+}
+
 .icon {
     font-size: 23px; 
     color: var(--lm-color);
-    padding: 10px;
-    filter: none;
-    transition: filter 0.3s ease-in-out;
 }
-.icon:hover {
-    filter: drop-shadow(0px 0px 3px rgb(95, 95, 95));
+.icon-link {
+    width: fit-content;
+    height: fit-content;
+    text-shadow: none;
+    transition: text-shadow 0.3s ease-in-out;
+}
+.icon-link:hover{
+    text-shadow: 0px 0px 3px rgb(95, 95, 95);
     cursor: pointer;
 }
 
@@ -68,8 +78,7 @@ h2 {
 
 .project-link {
     font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin: 30px 12px 15px 0;
 }
 
 .text-link:hover .link-arrow, .project-link:hover .link-arrow {
@@ -96,12 +105,23 @@ h2 {
 
 /* intro section styling */
 
-#intro {
-    height: 100vh;
+#intro-content {
+    padding-left: 0;
+}
+@media screen and (min-width: 1200px) {
+    #intro-content {
+        padding-left: 5%;
+        flex-grow: 1;
+    }
 }
 
-#name-c {
-    padding: 30px;
+svg {
+    width: 100%;
+    height: auto;
+}
+
+#intro-icons {
+    margin-top: 20px;
 }
 
 /* about section styling */
@@ -117,14 +137,18 @@ h2 {
     padding-top: 8vh;
 }
 
+.project-header {
+    display: flex;
+    align-items: center;
+}
+
 .project-title {
     color: var(--lm-color);
     text-decoration: none;
     font-weight: bold;
-    width: fit-content;
+    width: max-content;
     font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin: 30px 10px 15px 0;
 }
 
 .attribute {
@@ -146,21 +170,26 @@ div.attribute > p {
     box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;
 }
+@media screen and (max-width: 1999px) {
+    #intro-images {
+        margin-bottom: 20px;
+    }
+}
 #intro-images:hover {
     box-shadow: 0px 0px 15px rgb(0, 0, 0);
     cursor: pointer;
 }
 #intro-img-a {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     opacity: 1;
 }
 #intro-img-b {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     opacity: 0;
 }
@@ -174,18 +203,18 @@ div.attribute > p {
     animation: spin 1s;
 }
 
-@media screen and (min-width: 768px) {
-    #about-img {
-        max-width: 90%;
-        margin-top: 0;
-    }
-}
-#about-img {
+/* #about-img {
     width: 225px;
     margin-top: 15px;
     border-radius: 10px;
     box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+    #about-img {
+        max-width: 100%;
+        margin-top: 0;
+    }
 }
 #about-img:hover {
     box-shadow: 0px 0px 10px rgb(95, 95, 95);
@@ -198,4 +227,4 @@ div.attribute > p {
 }
 #about-img.jiggle {
     animation: jiggle 2s;
-}
+} */
