@@ -1,3 +1,7 @@
+:root {
+    --lm-color: rgb(17, 17, 17);
+}
+
 /* element styling */
 
 body {
@@ -6,12 +10,12 @@ body {
 
 p, a {
     font-family: "Jost", sans-serif;
-    color: #212529;
+    color: var(--lm-color);
 }
 
 h1, h2, h3, h4 {
     font-family: "Merriweather", sans-serif;
-    color: #212529;
+    color: var(--lm-color);
 }
 
 p, .text-link {
@@ -31,7 +35,7 @@ h2 {
 
 .icon {
     font-size: 23px; 
-    color: #212529;
+    color: var(--lm-color);
     padding: 10px;
     filter: none;
     transition: filter 0.3s ease-in-out;
@@ -50,7 +54,7 @@ h2 {
 }
 
 .text-link, .project-link {
-    color: #212529;
+    color: var(--lm-color);
     text-decoration: none;
     font-weight: bold;
     width: fit-content;
@@ -114,7 +118,7 @@ h2 {
 }
 
 .project-title {
-    color: #212529;
+    color: var(--lm-color);
     text-decoration: none;
     font-weight: bold;
     width: fit-content;
@@ -170,8 +174,15 @@ div.attribute > p {
     animation: spin 1s;
 }
 
+@media screen and (min-width: 768px) {
+    #about-img {
+        max-width: 90%;
+        margin-top: 0;
+    }
+}
 #about-img {
-    width: 250px;
+    width: 225px;
+    margin-top: 15px;
     border-radius: 10px;
     box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;

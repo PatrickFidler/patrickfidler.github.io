@@ -12,11 +12,14 @@ d3.selectAll("path").each(function(d) {
 });
 
 // fill name paths
+let root = getComputedStyle(document.documentElement);
+let curr_color = root.getPropertyValue('--lm-color');
 d3.select("#svgGroup")
+    .style("stroke", curr_color)
     .transition()
     .duration(2500)
     .delay(4000)
-    .style("fill", "rgb(33, 37, 41, 1)");
+    .style("fill", curr_color);
 
 // switch between greyscale/colour intro image
 const intro_box = document.getElementById("intro-images");
