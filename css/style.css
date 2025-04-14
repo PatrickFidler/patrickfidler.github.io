@@ -4,10 +4,6 @@
 
 /* element styling */
 
-body {
-    margin-bottom: 50px;
-}
-
 p, a {
     font-family: "Jost", sans-serif;
     color: var(--lm-color);
@@ -36,7 +32,7 @@ h2 {
 
 .container {
     width: 60%;
-    padding-top: 4%;
+    padding: 4% 0;
     margin: 0 auto;
 }
 
@@ -170,7 +166,7 @@ div.attribute > p {
     box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;
 }
-@media screen and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
     #intro-images {
         margin-bottom: 20px;
     }
