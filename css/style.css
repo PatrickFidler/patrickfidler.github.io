@@ -121,9 +121,11 @@ h2 {
     }
 }
 
-svg {
-    width: 100%;
-    height: auto;
+@media screen and (min-width: 1200px) {
+    svg {
+        width: 100%;
+        height: auto;
+    }
 }
 
 #intro-icons {
